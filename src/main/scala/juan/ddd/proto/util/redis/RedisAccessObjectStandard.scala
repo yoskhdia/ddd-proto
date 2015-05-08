@@ -1,4 +1,4 @@
-package twine.api
+package juan.ddd.proto.api
 
 /*
 import sandbox.config.SandboxConfig

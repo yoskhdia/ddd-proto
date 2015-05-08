@@ -1,4 +1,4 @@
-package twine.util.redis
+package juan.ddd.proto.util.redis
 /*
 import com.redis.RedisClient
 import com.redis.serialization.{DefaultFormats, Format}
