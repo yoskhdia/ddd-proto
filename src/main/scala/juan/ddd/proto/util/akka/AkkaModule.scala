@@ -1,4 +1,4 @@
-package juan.ddd.proto.akka
+package juan.ddd.proto.util.akka
 
 import net.codingwell.scalaguice.ScalaModule
 import akka.actor.{ActorRefFactory, ActorSystem}

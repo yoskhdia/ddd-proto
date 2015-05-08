@@ -1,4 +1,4 @@
-package juan.ddd.proto.config
+package juan.ddd.proto.util.config
 
 import javax.inject.{Named, Inject}
 

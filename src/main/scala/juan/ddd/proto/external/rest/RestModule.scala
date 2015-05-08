@@ -1,10 +1,10 @@
-package juan.ddd.proto.rest
+package juan.ddd.proto.external.rest
 
 import javax.inject.{Named, Singleton}
 
 import akka.actor.{ActorRef, ActorSystem}
 import com.google.inject.Provides
-import juan.ddd.proto.akka.GuiceAkkaExtension
+import juan.ddd.proto.util.akka.GuiceAkkaExtension
 import net.codingwell.scalaguice.ScalaModule
 
 /**

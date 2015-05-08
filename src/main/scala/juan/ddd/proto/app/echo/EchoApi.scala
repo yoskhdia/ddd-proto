@@ -1,6 +1,6 @@
 package juan.ddd.proto.app.echo
 
-import juan.ddd.proto.rest.RestComponent
+import juan.ddd.proto.external.rest.RestComponent
 import spray.routing.Directives
 
 import javax.inject.Inject

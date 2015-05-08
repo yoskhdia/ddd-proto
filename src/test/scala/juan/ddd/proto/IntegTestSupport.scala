@@ -2,7 +2,7 @@ package juan.ddd.proto
 
 import _root_.akka.actor.ActorRefFactory
 import com.google.inject.{Guice, Provides}
-import juan.ddd.proto.rest.{RestComponent, RestService, RestServiceActor}
+import juan.ddd.proto.external.rest.{RestComponent, RestService, RestServiceActor}
 import net.codingwell.scalaguice.ScalaModule
 import org.scalatest.concurrent.IntegrationPatience
 import scala.concurrent.duration._

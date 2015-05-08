@@ -2,7 +2,7 @@ package juan.ddd.proto.app.climate
 
 import javax.inject.Inject
 import juan.ddd.proto.app.climate.model.TemperatureUnit
-import juan.ddd.proto.rest.RestComponent
+import juan.ddd.proto.external.rest.RestComponent
 import org.json4s.ext.EnumNameSerializer
 import org.json4s.{Formats, DefaultFormats}
 import scala.concurrent.ExecutionContext

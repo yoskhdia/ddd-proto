@@ -1,4 +1,4 @@
-package juan.ddd.proto.rest
+package juan.ddd.proto.external.rest
 
 import com.typesafe.scalalogging.slf4j.LazyLogging
 import spray.routing.Directives

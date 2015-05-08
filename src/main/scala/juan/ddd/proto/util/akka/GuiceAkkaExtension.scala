@@ -1,4 +1,4 @@
-package juan.ddd.proto.akka
+package juan.ddd.proto.util.akka
 
 import akka.actor._
 import com.google.inject.Injector

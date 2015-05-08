@@ -1,4 +1,4 @@
-package juan.ddd.proto.rest
+package juan.ddd.proto.external.rest
 
 /**
  * Exception that will translate to an http error response with a specific

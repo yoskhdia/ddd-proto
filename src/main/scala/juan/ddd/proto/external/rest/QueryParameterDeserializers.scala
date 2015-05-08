@@ -1,4 +1,4 @@
-package juan.ddd.proto.rest
+package juan.ddd.proto.external.rest
 
 import spray.httpx.unmarshalling.{Deserializer, MalformedContent}
 

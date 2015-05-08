@@ -1,4 +1,4 @@
-package juan.ddd.proto.config
+package juan.ddd.proto.util.config
 
 import com.typesafe.config.ConfigValueType._
 import com.typesafe.config.{Config, ConfigFactory, ConfigRenderOptions, ConfigValue}
