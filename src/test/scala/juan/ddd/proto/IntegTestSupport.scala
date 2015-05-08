@@ -5,7 +5,6 @@ import com.google.inject.{Guice, Provides}
 import juan.ddd.proto.rest.{RestComponent, RestService, RestServiceActor}
 import net.codingwell.scalaguice.ScalaModule
 import org.scalatest.concurrent.IntegrationPatience
-import twine.rest.RestComponent
 import scala.concurrent.duration._
 
 import scala.reflect._

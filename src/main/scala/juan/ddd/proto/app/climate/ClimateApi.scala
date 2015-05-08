@@ -1,7 +1,7 @@
 package juan.ddd.proto.app.climate
 
 import javax.inject.Inject
-import juan.ddd.proto.app.climate.model.{PrecipitationUnit, TemperatureUnit}
+import juan.ddd.proto.app.climate.model.TemperatureUnit
 import juan.ddd.proto.rest.RestComponent
 import org.json4s.ext.EnumNameSerializer
 import org.json4s.{Formats, DefaultFormats}
@@ -34,7 +34,7 @@ class ClimateApi @Inject()(climateService: ClimateService)
 
 trait ClimateApiJsonSupport extends Json4sJacksonSupport {
 
-  import twine.app.climate.model.PrecipitationUnit
+  import juan.ddd.proto.app.climate.model.PrecipitationUnit
 
   def json4sJacksonFormats: Formats = DefaultFormats +
     new EnumNameSerializer(TemperatureUnit) +

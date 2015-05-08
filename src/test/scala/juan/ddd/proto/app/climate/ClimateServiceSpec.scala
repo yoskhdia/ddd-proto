@@ -3,9 +3,7 @@ package juan.ddd.proto.app.climate
 import juan.ddd.proto.{StandardSpec, UnitTestSupport}
 import juan.ddd.proto.app.climate.wbclimate.{WbClimateData, WbClimateClient}
 import org.mockito.Mockito._
-import twine.UnitTestSupport
 import scala.concurrent.Future
-import twine.app.climate.wbclimate.WbClimateClient
 
 /**
  */

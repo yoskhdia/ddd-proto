@@ -5,7 +5,6 @@ import juan.ddd.proto.app.{ServicesModule, ApisModule}
 import juan.ddd.proto.config.ConfigModule
 import juan.ddd.proto.rest.RestModule
 import net.codingwell.scalaguice.ScalaModule
-import twine.app._
 
 class MainModule extends ScalaModule
 {

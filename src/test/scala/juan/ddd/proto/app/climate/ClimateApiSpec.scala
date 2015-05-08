@@ -3,8 +3,6 @@ package juan.ddd.proto.app.climate
 import juan.ddd.proto.{UnitTestSupport, StandardSpec}
 import juan.ddd.proto.app.climate.model.{ClimateStats, ClimateQueryResult}
 import org.mockito.Mockito._
-import twine.app.climate.model.ClimateQueryResult
-import twine.UnitTestSupport
 import scala.concurrent.Future
 import spray.http.StatusCodes
 
