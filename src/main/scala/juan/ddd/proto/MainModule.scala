@@ -1,7 +1,8 @@
 package juan.ddd.proto
 
+import juan.ddd.proto.adapter.ApisModule
+import juan.ddd.proto.usecase.ServicesModule
 import juan.ddd.proto.util.akka.AkkaModule
-import juan.ddd.proto.app.{ServicesModule, ApisModule}
 import juan.ddd.proto.util.config.ConfigModule
 import juan.ddd.proto.external.rest.RestModule
 import net.codingwell.scalaguice.ScalaModule

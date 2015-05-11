@@ -1,4 +1,4 @@
-package juan.ddd.proto.app.echo
+package juan.ddd.proto.adapter.echo
 
 import juan.ddd.proto.external.rest.RestComponent
 import spray.routing.Directives
