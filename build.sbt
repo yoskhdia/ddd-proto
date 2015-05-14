@@ -9,9 +9,9 @@ scalaVersion := "2.11.6"
 scalacOptions ++= Seq("-unchecked", "-deprecation", "-feature")
 
 // Add external conf directory to the classpath
-unmanagedClasspath in Test += baseDirectory.value / "conf"
-
-unmanagedClasspath in Runtime += baseDirectory.value / "conf"
+//unmanagedClasspath in Test += baseDirectory.value / "conf"
+//
+//unmanagedClasspath in Runtime += baseDirectory.value / "conf"
 
 resolvers ++= Seq(
   "typesafe.com" at "http://repo.typesafe.com/typesafe/repo/",
