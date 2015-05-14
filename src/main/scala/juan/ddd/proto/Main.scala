@@ -1,7 +1,7 @@
 package juan.ddd.proto
 
 import com.google.inject.Guice
-import juan.ddd.proto.rest.RestServer
+import juan.ddd.proto.external.rest.RestServer
 
 object Main extends App
 {

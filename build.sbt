@@ -9,12 +9,13 @@ scalaVersion := "2.11.6"
 scalacOptions ++= Seq("-unchecked", "-deprecation", "-feature")
 
 // Add external conf directory to the classpath
-unmanagedClasspath in Test += baseDirectory.value / "conf"
-
-unmanagedClasspath in Runtime += baseDirectory.value / "conf"
+//unmanagedClasspath in Test += baseDirectory.value / "conf"
+//
+//unmanagedClasspath in Runtime += baseDirectory.value / "conf"
 
 resolvers ++= Seq(
   "typesafe.com" at "http://repo.typesafe.com/typesafe/repo/",
+  "sonatype.org-snapshots" at "https://oss.sonatype.org/content/repositories/snapshots",
   "sonatype.org" at "https://oss.sonatype.org/content/repositories/releases",
   "spray.io" at "http://repo.spray.io"
 )
@@ -27,7 +28,6 @@ resolvers ++= Seq(
   val SlickVersion = "2.1.0"
   val SprayVersion = "1.3.3"
   libraryDependencies ++= Seq(
-    "com.googlecode.flyway" % "flyway-core" % "2.3.1",
     "com.github.scopt" %% "scopt" % "3.3.0",
     "com.typesafe.akka" %% "akka-actor" % AkkaVersion,
     "com.typesafe.akka" %% "akka-slf4j" % AkkaVersion,
@@ -44,6 +44,8 @@ resolvers ++= Seq(
     "org.apache.logging.log4j" % "log4j-slf4j-impl" % Log4jVersion,
     "org.json4s" %% "json4s-jackson" % Json4sVersion,
     "org.json4s" %% "json4s-ext" % Json4sVersion,
+    "org.sisioh" %% "scala-dddbase-core" % "0.2.1-SNAPSHOT",
+    "eu.bitwalker" % "UserAgentUtils" % "1.15",
     //-------------------------------------------------------------------------
     "com.h2database" % "h2" % "1.4.182",
     "com.typesafe.akka" %% "akka-testkit" % AkkaVersion % "test",
