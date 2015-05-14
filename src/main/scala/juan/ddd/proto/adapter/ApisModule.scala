@@ -1,7 +1,8 @@
 package juan.ddd.proto.adapter
 
 import juan.ddd.proto.adapter.echo.EchoApi
-import juan.ddd.proto.external.rest.RestComponent
+import juan.ddd.proto.adapter.routing.UserRepositoryImpl
+import juan.ddd.proto.contract.routing.UserRepository
 import net.codingwell.scalaguice._
 
 class ApisModule extends ScalaModule
@@ -14,6 +15,8 @@ class ApisModule extends ScalaModule
 
   def configure
   {
+    bind[UserRepository].to[UserRepositoryImpl]
+
     bindApi.to[EchoApi]
   }
 }

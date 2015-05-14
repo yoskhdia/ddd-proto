@@ -1,7 +1,7 @@
 package juan.ddd.proto
 
 import juan.ddd.proto.adapter.ApisModule
-import juan.ddd.proto.usecase.ServicesModule
+import juan.ddd.proto.usecase.UseCaseModule
 import juan.ddd.proto.util.akka.AkkaModule
 import juan.ddd.proto.util.config.ConfigModule
 import juan.ddd.proto.external.rest.RestModule
@@ -21,7 +21,7 @@ class MainModule extends ScalaModule
   }
 
   private def installServices() {
-    install(new ServicesModule)
+    install(new UseCaseModule)
   }
 
   private def installServer() {

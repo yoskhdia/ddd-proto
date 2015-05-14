@@ -1,6 +1,7 @@
 package juan.ddd.proto.external.rest
 
 import com.typesafe.scalalogging.slf4j.LazyLogging
+import juan.ddd.proto.adapter.RestComponent
 import spray.routing.Directives
 
 import scala.concurrent.{ExecutionContext, Future}

@@ -5,6 +5,7 @@ import javax.inject.Inject
 import akka.actor.Actor
 import akka.event.Logging
 import com.typesafe.scalalogging.slf4j.LazyLogging
+import juan.ddd.proto.adapter.RestComponent
 import spray.http.StatusCodes
 import spray.routing.{MissingQueryParamRejection, _}
 import spray.util.LoggingContext

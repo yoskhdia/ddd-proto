@@ -1,6 +1,7 @@
 package juan.ddd.proto.external.rest
 
 import juan.ddd.proto.StandardSpec
+import juan.ddd.proto.adapter.RestComponent
 import spray.http.StatusCodes
 import spray.testkit.ScalatestRouteTest
 
