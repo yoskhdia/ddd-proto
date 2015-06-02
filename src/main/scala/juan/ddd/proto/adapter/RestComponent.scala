@@ -12,7 +12,7 @@ trait RestComponent
     val userAgent = request.headers.find(_.is("user-agent")).map(h => new EuUserAgent(h.value))
     userAgent match {
       case Some(agent) => {
-        val browser = Browser(agent.getBrowser.name, agent.getBrowserVersion.getVersion)
+        val browser = Browser(Option(agent.getBrowser).map(_.name).getOrElse(""), Option(agent.getBrowserVersion).map(_.getVersion).getOrElse(""))
         val deviceType = agent.getOperatingSystem.getDeviceType match {
           case EuDeviceType.COMPUTER => DeviceType.PC
           case EuDeviceType.MOBILE => DeviceType.Mobile

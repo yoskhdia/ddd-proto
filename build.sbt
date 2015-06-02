@@ -38,7 +38,7 @@ resolvers ++= Seq(
     "io.spray" %% "spray-client" % SprayVersion,
     "io.spray" %% "spray-json" % "1.3.2",
     "io.spray" %% "spray-routing" % SprayVersion,
-    "net.codingwell" %% "scala-guice" % "4.0.0-beta5",
+    "net.codingwell" %% "scala-guice" % "4.0.0",
     "org.apache.logging.log4j" % "log4j-api" % Log4jVersion,
     "org.apache.logging.log4j" % "log4j-core" % Log4jVersion,
     "org.apache.logging.log4j" % "log4j-slf4j-impl" % Log4jVersion,
