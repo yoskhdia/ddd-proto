@@ -28,21 +28,22 @@ usecase層辺りから、インスタンス化をDIに委ねる必要が出て�
 * domain  
 ビジネスドメインモデル
 
-* util
+* util  
 上記のような層に属さないユーティリティ
 
 # DI
 
-アーキテクチャの単方向への依存を守るために、DIを用いる。
+クリーンアーキテクチャの各層において、単方向への依存を守るためにDIを用いる。
 
 ## 代表的な使い方
 
 https://github.com/codingwell/scala-guice
+
 http://qiita.com/opengl-8080/items/6fb69cd2493e149cac3a
 
 インタフェースに対して、どの具象クラスをバインドするかは、ScalaModuleをMix-Inしたモジュールを定義して設定する。
 
-```
+```scala
 class MyModule extends ScalaModule
 {
   def configure
@@ -53,7 +54,7 @@ class MyModule extends ScalaModule
 ```
 
 * コンストラクタインジェクション  
-```
+```scala
 import javax.inject.Inject
 class MyClass @Inject()(userReporsitory: UserRepository)
 {
@@ -62,7 +63,7 @@ class MyClass @Inject()(userReporsitory: UserRepository)
 ```
 
 * フィールドインジェクション  
-```
+```scala
 import javax.inject.Inject
 class MyClass
 {
@@ -76,14 +77,14 @@ class MyClass
 ## 注意点
 
 * valはJavaだとfinal扱いなので、インジェクションを行うことができない
-```
+```scala
 class MyClass
 {
   @inject val userRepository: UserRepository = null
 }
 ```
 * フィールドにInjectしたオブジェクトを使ってフィールドを初期化してはいけない  
-```
+```scala
 class MyClass
 {
   @Inject var userRepository: UserRepository = _
