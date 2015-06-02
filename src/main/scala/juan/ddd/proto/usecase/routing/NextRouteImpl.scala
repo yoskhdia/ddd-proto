@@ -5,9 +5,7 @@ import javax.inject.Inject
 import juan.ddd.proto.contract.routing._
 import juan.ddd.proto.domain.routing._
 
-class NextRouteImpl extends NextRoute {
-  @Inject var userRepository: UserRepository = _
-  @Inject var routingMapFinder: RoutingMapFinder = _
+class NextRouteImpl @Inject()(userRepository: UserRepository, routingMapFinder: RoutingMapFinder) extends NextRoute {
 
   override def nextRoute(userId: UserId, request: Request): Option[Route] = {
     val router = Router(routingMapFinder.find())
