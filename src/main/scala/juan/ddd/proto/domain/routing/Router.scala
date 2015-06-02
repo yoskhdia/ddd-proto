@@ -26,8 +26,6 @@ object Router {
 case class SimpleRouter(routingMap: RoutingMap) extends Router {
 
   override def nextRoute(request: Request): Option[Route] = {
-    Some {
-      routingMap.head._2
-    }
+    routingMap.get(request.referer.uri.path)
   }
 }
